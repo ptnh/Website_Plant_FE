@@ -1,0 +1,207 @@
+.section-first-title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    color: var(--main-color);
+    font-size: 32px;
+}
+
+.section-first-title::after {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--main-color);
+    width: 200px;
+    bottom: 0;
+    left: 410px;
+}
+
+.section-first-title::before {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--main-color);
+    width: 200px;
+    bottom: 0;
+    right: 410px;
+}
+
+.icon-mid {
+    color: var(--main-color);
+    font-size: 30px;
+    position: absolute;
+    bottom: -25px;
+    left: 630px;
+}
+
+.section-first-title h3 {
+    margin: 0px 10px;
+}
+
+.container_list_carts {
+    margin: 0px auto 0px auto;
+    // border: 1px solid red;
+    width: 860px;
+    height: auto;
+}
+
+.top_infomation {
+    margin: 0 auto;
+    width: 860px;
+    height: 220px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.stages_of_cart {
+   
+    width: 600px;
+    margin: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    // color: green;
+}
+
+
+
+.phase {
+    font-size: 24px;
+}
+
+.stage_1_carts {
+    position: relative;
+    // border: 1px solid pink;
+    z-index: 0;
+    // display: flex
+    color: green;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.stage_1_carts p {
+    margin: 5px 0px;
+    color: green;
+}
+
+
+
+.stage_1_carts_icon{
+    position: absolute;
+    bottom: 40px;
+    right: -55px;
+    display: flex;
+    margin: 0px 20px;
+}
+
+.stage_2 p {
+    margin: 5px 0px;
+}
+
+.stage_2 {
+    position: relative;
+    border-radius: 10px;
+    margin-right: 25px;
+    border: 2px solid rgb(30, 255, 0);
+    padding: 10px;
+    z-index: 1;
+}
+
+.stage_2_carts_icon{
+    position: absolute;
+    bottom: 40px;
+    right: -60px;
+    display: flex;
+    margin: 0px 20px;
+}
+
+
+.stage_3 p {
+    margin: 5px 0px;
+}
+
+.stage_3 {
+    position: relative;
+    border: 2px solid rgb(30, 255, 0);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+/* css khung danh sách hàng trong giỏ */
+.list_products {
+    width: 100%;
+    border-collapse: collapse;
+}
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    max-height: 20px;
+    background-color: #887e7e;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+td img {
+    width: 30px;
+    height: 40px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+}
+
+#quantity {
+    position: relative;
+    margin-left: 20px;
+}
+
+.minus-button {
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    top: bottom;
+    right: 925px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.plus-button {
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    /* position: absolute; */
+}
+
+// scss cho phần lựa chọn mua hàng và thanh toán
+.total_money_cart {
+    display: flex;
+    justify-content: right;
+}
+
+.total_money_cart .result {
+    font-size: 22px;
+}
+
+.continute_buy_product {
+    margin-left: 5px;
+    background-color: aquamarine;
+}
+
+.pay {
+    margin-left: 5px;
+    background-color: aquamarine;
+}
